@@ -18,7 +18,7 @@ terraform {
 
 # Configure the AWS Provider ESTO ES PRUEBA
 provider "aws" {
-  region     = "us-east-2"
+  region     = "us-east-1"
 }
 
 resource "aws_security_group" "GS_TEST_TF_1" {
