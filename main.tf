@@ -18,11 +18,11 @@ terraform {
 
 # Configure the AWS Provider ESTO ES PRUEBA
 provider "aws" {
-  region     = "us-east-2"
+  region     = "us-east-1"
 }
 
-resource "aws_security_group" "GS_TEST_TF" {
-  name        = "GS-TEST-TF"
+resource "aws_security_group" "GS_TEST_TF_1" {
+  name        = "GS-TEST-TF-1"
   description = "Allow all inbound traffic"
   vpc_id      = "vpc-0dd386a84ae505125"
 
@@ -43,6 +43,6 @@ resource "aws_security_group" "GS_TEST_TF" {
   }
 
   tags = {
-    Name = "GS-TEST-TF"
+    Name = "GS-TEST-TF-1"
   }
 }
